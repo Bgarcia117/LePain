@@ -1,0 +1,38 @@
+* {
+    font-family: 'IM Fell French Canon', serif;
+}
+
+#header {
+    color: white;
+    background-image: url("Images/header.jpg");
+    /* Don't use % because that refers to the height of the container that it is in. Use viewheight instead */
+    height: 95vh;
+    background-position: center;
+    /* So we can see the full image on the screen */
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    #header {
+        padding: 0 100px;
+    }
+}
+
+/* This is in order to keep all the cards the same height when the size is shrunk due to the amount of content in each card */
+@media (min-width: 992px) {
+    .card-text {
+        height: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-text {
+        height: 90px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card-text {
+        height: 70px;
+    }
+}
